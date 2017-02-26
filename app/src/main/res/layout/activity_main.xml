@@ -8,10 +8,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.felipemarco.cademeudinheiro.MainActivity">
+    tools:context="com.felipemarco.cademeudinheiro.Activity.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="43dp"
+        android:id="@+id/textViewMes"
+        android:hint="Selecione um mês"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Visualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="103dp"
+        android:id="@+id/buttonMes"
+        android:layout_below="@+id/spinnerMes"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:id="@+id/spinnerMes"
+        android:layout_below="@+id/textViewMes"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
