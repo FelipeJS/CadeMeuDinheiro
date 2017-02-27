@@ -1,4 +1,4 @@
-package com.felipemarco.cademeudinheiro.Domain;
+package com.felipemarco.cademeudinheiro.domain;
 
 /**
  * Created by Felipe on 25/02/2017.
@@ -11,6 +11,7 @@ public class Pessoa {
     private String cpf;
     private String email;
     private String senha;
+    private String token;
 
     public Integer getCodigo() {
         return codigo;
@@ -50,5 +51,13 @@ public class Pessoa {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }

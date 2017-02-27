@@ -1,4 +1,4 @@
-package com.felipemarco.cademeudinheiro.Activity;
+package com.felipemarco.cademeudinheiro.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

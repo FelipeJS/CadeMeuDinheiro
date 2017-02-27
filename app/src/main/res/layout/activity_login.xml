@@ -8,16 +8,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.felipemarco.cademeudinheiro.Activity.LoginActivity">
+    tools:context="com.felipemarco.cademeudinheiro.activity.LoginActivity">
 
-    <Button
-        android:text="Entrar"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:id="@+id/button7" />
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@color/md_divider_white">
 
     <EditText
         android:layout_width="match_parent"
@@ -25,7 +26,7 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:layout_marginTop="21dp"
-        android:id="@+id/editText"
+        android:id="@+id/editTextEmail"
         android:hint="Email"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
@@ -36,28 +37,29 @@
         android:inputType="textPassword"
         android:ems="10"
         android:layout_marginTop="32dp"
-        android:id="@+id/editText2"
+        android:id="@+id/editTextSenha"
         android:hint="Senha"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/editTextEmail"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Esqueci minha senha"
-        android:layout_width="wrap_content"
+        android:text="Entrar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button9"
-        android:layout_alignBaseline="@+id/button8"
-        android:layout_alignBottom="@+id/button8"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/editTextSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/buttonEntrar" />
 
     <Button
-        android:text="Cadastrar"
-        android:layout_width="wrap_content"
+        android:text="Esqueci minha senha"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:id="@+id/button8"
-        android:layout_marginEnd="23dp"
-        android:layout_below="@+id/button7"
-        android:layout_toStartOf="@+id/button9" />
+        android:id="@+id/buttonEsqueci"
+        android:layout_alignBaseline="@+id/buttonCadastrar"
+        android:layout_alignBottom="@+id/buttonCadastrar"
+        android:layout_alignParentEnd="true"
+        android:onClick="login"/>
 
+    </LinearLayout>
 </RelativeLayout>

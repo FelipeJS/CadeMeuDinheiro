@@ -1,4 +1,4 @@
-package com.felipemarco.cademeudinheiro.Domain;
+package com.felipemarco.cademeudinheiro.domain;
 
 import java.math.BigDecimal;
 

@@ -24,6 +24,24 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    //View e compatibility
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support:design:25.0.0'
     compile 'com.android.support:appcompat-v7:25.1.1'
+
+    //Web connection
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+
+    //EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //Image loading
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //Material Dialog
+    compile 'com.afollestad.material-dialogs:core:0.9.3.0'
+
+    //Test
     testCompile 'junit:junit:4.12'
 }
